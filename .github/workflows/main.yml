@@ -52,7 +52,7 @@ jobs:
                 npm run build;
                } ||
                {
-                 exho "Repository sudah ada. Building...";
+                 echo "Repository sudah ada. Building...";
                  cd ~/senpro/502670/modul02/senpro-github-action;
                  git restore;
                  git pull origin main;
