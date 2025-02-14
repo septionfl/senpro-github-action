@@ -32,9 +32,9 @@ jobs:
       - name: Build app on VM
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST}}
-          username: ${{ secrets.USERNAME}}
-          password: ${{ secrets. PASSWORD }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           scripts: |
             eval "$(ssh-agent -s)"
