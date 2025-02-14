@@ -50,16 +50,16 @@ jobs:
                 echo "Install Package dan Build Project";
                 npm install;
                 npm run build;
-               } ||
-               {
-                 echo "Repository sudah ada. Building...";
-                 cd ~/senpro/502670/modul02/senpro-github-action;
-                 git restore;
-                 git pull origin main;
-                 echo "Install Package dan Build Project";
-                 npm install;
-                 npm run build;
-                }
+              } ||
+              {
+                echo "Repository sudah ada. Building...";
+                cd ~/senpro/502670/modul02/senpro-github-action;
+                git restore;
+                git pull origin main;
+                echo "Install Package dan Build Project";
+                npm install;
+                npm run build;
+              }
          
       
 
